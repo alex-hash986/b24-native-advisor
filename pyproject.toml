@@ -1,0 +1,25 @@
+[project]
+name = "b24-native-advisor"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2,<3", "python-dotenv>=1,<2"]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.67,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "mypy>=1.15,<3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true

@@ -1,0 +1,24 @@
+[
+  {
+    "fragment_id": "fixture-crm",
+    "url": "https://helpdesk.bitrix24.ru/open/24633726/",
+    "checked_at": "2026-11-24T12:00:00Z",
+    "revision_or_hash": "synthetic-1",
+    "snippet": "Синтетический фрагмент для поиска по словам «CRM» и «поля».",
+    "areas": ["crm"],
+    "sections": ["CRM"],
+    "entities": [],
+    "tariffs": []
+  },
+  {
+    "fragment_id": "fixture-rest",
+    "url": "https://apidocs.bitrix24.ru/api-reference/crm/universal/crm-item-fields.html",
+    "checked_at": "2026-11-24T12:00:00Z",
+    "revision_or_hash": "synthetic-2",
+    "snippet": "Синтетический фрагмент для поиска метода полей элемента CRM.",
+    "areas": ["crm"],
+    "sections": ["REST"],
+    "entities": [],
+    "tariffs": []
+  }
+]

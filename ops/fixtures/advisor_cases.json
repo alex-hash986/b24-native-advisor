@@ -1,0 +1,211 @@
+[
+  {
+    "name": "native-smart-process",
+    "question": "Смарт-процесс CRM: как настроить поля и стадии?",
+    "sources": [
+      "smart-processes"
+    ],
+    "age_days": 30,
+    "expected_tier": "native",
+    "expected_sources": [
+      "smart-processes"
+    ],
+    "required_claim": "Настройте поля и стадии смарт-процесса. Проверьте, что для типа включены нужные возможности.",
+    "draft": {
+      "tier": "native",
+      "recommendation": "Настройте поля и стадии смарт-процесса. Проверьте, что для типа включены нужные возможности.",
+      "native_gap": null,
+      "fragment_ids": [
+        "smart-processes"
+      ],
+      "observation_ids": [
+        0,
+        1
+      ],
+      "review_reasons": []
+    }
+  },
+  {
+    "name": "native-keyword-fallback",
+    "question": "Как настроить роли CRM для сделок в отдельных воронках?",
+    "sources": [
+      "crm-roles"
+    ],
+    "embedding_fallback": true,
+    "expected_tier": "native",
+    "expected_sources": [
+      "crm-roles"
+    ],
+    "required_claim": "Настройте роль CRM для нужной воронки и проверьте видимость сделок под учётной записью сотрудника.",
+    "draft": {
+      "tier": "native",
+      "recommendation": "Настройте роль CRM для нужной воронки и проверьте видимость сделок под учётной записью сотрудника.",
+      "native_gap": null,
+      "fragment_ids": [
+        "crm-roles"
+      ],
+      "observation_ids": [
+        0,
+        1
+      ],
+      "review_reasons": []
+    }
+  },
+  {
+    "name": "documented-extension",
+    "question": "Как передать метаданные полей CRM во внешний реестр с его собственным протоколом?",
+    "sources": [
+      "rest-fields"
+    ],
+    "expected_tier": "extension",
+    "expected_sources": [
+      "rest-fields"
+    ],
+    "required_claim": "Получите описания полей через crm.item.fields. Для передачи во внешний реестр используйте адаптер его протокола.",
+    "draft": {
+      "tier": "extension",
+      "recommendation": "Получите описания полей через crm.item.fields. Для передачи во внешний реестр используйте адаптер его протокола.",
+      "native_gap": "Передать метаданные полей во внешний реестр с его собственным протоколом.",
+      "fragment_ids": [
+        "rest-fields"
+      ],
+      "observation_ids": [
+        0
+      ],
+      "review_reasons": []
+    }
+  },
+  {
+    "name": "unproven-customization",
+    "question": "Смарт-процесс CRM: нужно ли расширение для полей и стадий?",
+    "sources": [
+      "smart-processes"
+    ],
+    "expected_tier": "undetermined",
+    "expected_review": "unsupported_conclusion",
+    "draft": {
+      "tier": "extension",
+      "recommendation": "Подключите внешний модуль для настройки стадий.",
+      "native_gap": "Штатные стадии отсутствуют.",
+      "fragment_ids": [
+        "smart-processes"
+      ],
+      "observation_ids": [
+        0,
+        1
+      ],
+      "review_reasons": []
+    }
+  },
+  {
+    "name": "invented-source",
+    "question": "Смарт-процесс CRM: как настроить поля и стадии?",
+    "sources": [
+      "smart-processes"
+    ],
+    "expected_tier": "undetermined",
+    "expected_review": "invalid_evidence",
+    "draft": {
+      "tier": "native",
+      "recommendation": "Включите выдуманную синхронизацию полей.",
+      "native_gap": null,
+      "fragment_ids": [
+        "invented"
+      ],
+      "observation_ids": [
+        0,
+        1
+      ],
+      "review_reasons": []
+    }
+  },
+  {
+    "name": "expired-source",
+    "question": "Смарт-процесс CRM: как настроить поля и стадии?",
+    "sources": [
+      "smart-processes"
+    ],
+    "age_days": 31,
+    "expected_tier": "undetermined",
+    "expected_review": "missing_sources"
+  },
+  {
+    "name": "missing-area-documentation",
+    "question": "Как настроить поля CRM и роботы?",
+    "sources": [
+      "smart-processes"
+    ],
+    "expected_tier": "undetermined",
+    "expected_review": "missing_sources"
+  },
+  {
+    "name": "visibility-gap",
+    "question": "Как работают роботы CRM при входе на стадию?",
+    "sources": [
+      "robots"
+    ],
+    "snapshot": "partial",
+    "expected_tier": "undetermined",
+    "expected_review": "visibility_gap",
+    "draft": {
+      "tier": "undetermined",
+      "recommendation": "Уточните данные и подтвердите применимость штатного варианта.",
+      "native_gap": null,
+      "fragment_ids": [],
+      "observation_ids": [],
+      "review_reasons": [
+        "Сверьте настройки целевой сущности в интерфейсе."
+      ]
+    }
+  },
+  {
+    "name": "no-snapshot",
+    "question": "Смарт-процесс CRM: как настроить поля и стадии?",
+    "sources": [
+      "smart-processes"
+    ],
+    "snapshot": "absent",
+    "expected_tier": "undetermined",
+    "expected_review": "missing_snapshot",
+    "draft": {
+      "tier": "undetermined",
+      "recommendation": "Уточните данные и подтвердите применимость штатного варианта.",
+      "native_gap": null,
+      "fragment_ids": [],
+      "observation_ids": [],
+      "review_reasons": [
+        "Сверьте настройки целевой сущности в интерфейсе."
+      ]
+    }
+  },
+  {
+    "name": "foreign-snapshot",
+    "question": "Смарт-процесс CRM: как настроить поля и стадии?",
+    "sources": [
+      "smart-processes"
+    ],
+    "snapshot": "foreign",
+    "expected_tier": "undetermined",
+    "expected_review": "missing_snapshot",
+    "draft": {
+      "tier": "undetermined",
+      "recommendation": "Уточните данные и подтвердите применимость штатного варианта.",
+      "native_gap": null,
+      "fragment_ids": [],
+      "observation_ids": [],
+      "review_reasons": [
+        "Сверьте настройки целевой сущности в интерфейсе."
+      ]
+    }
+  },
+  {
+    "name": "deterministic-smoke",
+    "question": "Смарт-процесс CRM: как настроить поля и стадии?",
+    "sources": [
+      "smart-processes"
+    ],
+    "dry_run": true,
+    "expected_tier": "undetermined",
+    "expected_review": "model_review"
+  }
+]
